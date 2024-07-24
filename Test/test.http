@@ -1,0 +1,26 @@
+### Obtener todos los elementos
+GET http://localhost:5033/api/tareas
+Accept: application/json
+
+
+### Crear una nueva Tarea
+POST http://localhost:5033/api/tareas
+Content-Type: application/json
+
+{
+  "categoriaId": "f789c33a-0a4b-4b62-a13e-c9b643dfb941",
+  "titulo": "Tarea Nueva 3",
+  "descripcion": "Culminacion de Entity FrameWork Intermedio",
+  "prioridadTarea": 1
+}
+
+### Actualizar una Tarea
+PUT http://localhost:5033/api/tareas/227e7462-0213-47ce-bfbf-e6490f2ff4ce
+Content-Type: application/json
+
+{
+  "categoriaId": "f789c33a-0a4b-4b62-a13e-c9b643dfb941",
+  "titulo": "Dormir",
+  "descripcion": "Descanso",
+  "prioridadTarea": "Baja"
+}
