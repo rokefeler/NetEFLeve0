@@ -6,6 +6,7 @@ Accept: application/json
 ### Crear una nueva Tarea
 POST http://localhost:5033/api/tareas
 Content-Type: application/json
+Accept: application/json
 
 {
   "categoriaId": "f789c33a-0a4b-4b62-a13e-c9b643dfb941",
@@ -17,10 +18,17 @@ Content-Type: application/json
 ### Actualizar una Tarea
 PUT http://localhost:5033/api/tareas/227e7462-0213-47ce-bfbf-e6490f2ff4ce
 Content-Type: application/json
+Accept: application/json
 
 {
-  "categoriaId": "f789c33a-0a4b-4b62-a13e-c9b643dfb941",
+  "categoriaId": "f792aa56-09d5-4860-85c6-ce0b800e2ae6",
   "titulo": "Dormir",
-  "descripcion": "Descanso",
-  "prioridadTarea": "Baja"
+  "descripcion": "Descanso 4",
+  "prioridadTarea": 2
 }
+
+
+### Eliminar una Tarea
+DELETE http://localhost:5033/api/tareas/227e7462-0213-47ce-bfbf-e6490f2ff4ce
+Accept: application/json
+
